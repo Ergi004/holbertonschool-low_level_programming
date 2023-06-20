@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int n = 98;
+int n = 98, -98, 0;
 
 int main(void)
 {

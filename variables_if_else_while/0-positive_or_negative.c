@@ -4,12 +4,13 @@
 
 #include<stdlib.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - main function
+ * Return: 0 value
+ */
 
 int main(void)
-/*main*/
+
 {
 	int n = 98;
 

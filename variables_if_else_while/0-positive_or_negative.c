@@ -1,14 +1,14 @@
 #include<stdio.h>
 
-int n = 7777;
+int n = 98;
 
 int main(void)
 {
 	if ( n > 0)
-	       printf("Number is positive\n");
+	       printf("98 is positive\n");
 	else if ( n == 0 )
   		printf("Number is 0\n");	
 	else
-       		printf("Number is negative");
+       		printf("-98 is negative");
 	return (0);
 }	

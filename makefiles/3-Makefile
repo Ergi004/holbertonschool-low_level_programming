@@ -8,7 +8,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) *! *.tmp $(NAME)
+	$(RM) *~ *.tmp $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
@@ -16,5 +16,4 @@ oclean:
 fclean:
 	$(RM) *! *.tmp $(NAME) $(OBJ)
 
-re:
-	oclean all
+re:	oclean all

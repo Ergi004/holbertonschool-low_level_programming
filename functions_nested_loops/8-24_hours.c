@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jask_bauer - Prints every minue of the dau of Jack Bauer
+ * jack_bauer - Prints every minue of the dau of Jack Bauer
  * Return: ...
  **/
 

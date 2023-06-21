@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - checl the code
- *
- * Return: Always 0.
+ * jask_bauer - Prints every minue of the dau of Jack Bauer
+ * Return: ...
  **/
 
 void jack_bauer(void)

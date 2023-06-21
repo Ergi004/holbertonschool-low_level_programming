@@ -5,36 +5,36 @@
  * Return: empty output
  */
 
-void times_table(void)
+void times_table(void
+		)
 {
-	int x, y, z, u, d;
+	int result;
+	int j, i;
 
-	for (x = 0; x <= 9; x++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (y = 0; y <= 9; y++)
+		for (j = 0; j <= 9; j++)
 		{
-			z = x * y;
-
-			if (z > 9)
+			result = i * j;
+			if (result >= 10)
 			{
-				u = z * 10;
-				d = (z - u) / 10;
+				_putchar('0' + result / 10);
+				_putchar('0' + result % 10);
+			}
+			if (j > 9)
+			{
 				_putchar(',');
-				_putchar(' ');
-				_putchar(d + '0');
-				_putchar(u + '0');
 			}
-			else
+			if (i * (j + 1) < 10 && j != 9)
 			{
-				if (y != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				_putchar(z + '0');
+				_putchar(' ');
+				_putchar(' ');
 			}
+			else if (j != 9)
+			{
+				_putchar(' ');
+			}
+			_putchar('\n');
 		}
-		_putchar(z + '\n');
 	}
 }

@@ -5,8 +5,8 @@
  * Return: empty output
  */
 
-void times_table(void
-		)
+void times_table(void)
+
 {
 	int result;
 	int j, i;
@@ -19,21 +19,24 @@ void times_table(void
 			if (result >= 10)
 			{
 				_putchar('0' + result / 10);
-				_putchar('0' + result % 10);
 			}
-			if (j > 9)
+			_putchar('0' + result % 10);
+			
+			if (j != 9)
 			{
 				_putchar(',');
 			}
-			if (i * (j + 1) < 10 && j != 9)
+
+			if (result >= 10)
+			{
+				_putchar(' ');
+			}
+			else if (result < 10 && j != 9)
 			{
 				_putchar(' ');
 				_putchar(' ');
 			}
-			else if (j != 9)
-			{
-				_putchar(' ');
-			}
+
 		}
 	_putchar('\n');
 	}

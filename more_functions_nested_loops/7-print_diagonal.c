@@ -5,14 +5,18 @@
  * @n: The times the underline is printed
  * Return:
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i;
-
+	int s;
+	
 	for (i = 1; i <= n; i++)
 	{
-		for (
-		_putchar('_');
+		for (s = 1; s <= n; s++)
+		{
+			_putchar(' ');
+			_putchar('/');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }

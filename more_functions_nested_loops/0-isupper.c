@@ -3,9 +3,9 @@
 
 int _isupper(int c)
 {
-	if (c <= 90)
+	while (c >= 65)
 	{
-		if (c >= 67)
+		while (c <= 97 || c <= 33)
 		{
 			return (0);
 		}
@@ -13,7 +13,3 @@ int _isupper(int c)
 	}
 	return (0);
 }
-/**
- * _isupper - Checks if character is uppercase
- * Return: The character being uppercase
- */

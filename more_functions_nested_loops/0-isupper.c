@@ -3,13 +3,9 @@
 
 int _isupper(int c)
 {
-	while (c >= 65)
+	if (c >= 65 && c <= 90)
 	{
-		while (c <= 97 || c <= 33)
-		{
-			return (0);
-		}
 		return (1);
 	}
-	return (0);
+	return(0);
 }

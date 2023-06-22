@@ -6,6 +6,7 @@
  * @c: the character ti be checked
  * Return: 1 of the charracter is a digit 0 for anything else
  */
+
 int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)

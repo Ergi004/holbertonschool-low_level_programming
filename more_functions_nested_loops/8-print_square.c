@@ -3,7 +3,6 @@
 /**
  * print_square - Prints a square
  * @size: The variable with the size value
- * @n: dsadasd
  * Return: sdasdas
  */
 void print_square(int size)

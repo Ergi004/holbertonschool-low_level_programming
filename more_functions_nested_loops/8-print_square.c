@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_line - Prints a line
- * @n: The times the underline is printed
- * Return:
+ * print_square - Prints a square
+ * @size: The variable with the size value
+ * @n: dsadasd
+ * Return: sdasdas
  */
 void print_square(int size)
 {
@@ -15,7 +16,7 @@ void print_square(int size)
 		{
 			_putchar('#');
 		}
-		if (size < 0)
+		if (size <= 0)
 		{
 		_putchar('\n');
 		}

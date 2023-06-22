@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _digit - Checks if the charracter is a digit
+ * _isdigit - Checks if the charracter is a digit
  * @c: the character ti be checked
  * Return: 1 of the charracter is a digit 0 for anything else
  */

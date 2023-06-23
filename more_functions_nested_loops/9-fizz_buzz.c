@@ -22,7 +22,7 @@ int main()
 		}
 		else if (i % 15 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else
 		{

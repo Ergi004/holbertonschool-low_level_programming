@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
- * print_square - Prints a square
- * @size: The variable with the size value
- * Return: sdasdas
+ * main: Entry point
+ * Return: Return 1 always succes.
  */
 
-int main()
+int main(void)
 {
 	int i;
 
@@ -17,9 +16,9 @@ int main()
 			printf("Buzz");
 		}
 		else if (i % 3 == 0 && i % 5 == 0)
-                {
-                        printf("FizzBuzz ");
-                }
+		{
+			printf("FizzBuzz ");
+		}
 		else if (i % 3 == 0)
 		{
 			printf("Fizz ");

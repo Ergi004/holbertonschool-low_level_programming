@@ -1,21 +1,29 @@
 #include "main.h"
 
 /**
- * print_line - Prints a line
- * @n: The times the underline is printed
+ * print_diagonal - Prints a diagonal line
+ * @n: The times the slash is printed
  * Return:
  */
+
 void print_diagonal(int n)
 {
 	int i;
-	int s;
-	
-	for (i = 1; i <= n; i++)
+	int j;
+
+	if (n <= 0)
 	{
-		for (s = 1; s <= n; s++)
+		_putchar('\n');
+	}
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j <= i; j++)
 		{
+			if (i == j)
+			{
+				_putchar('\\');
+			}
 			_putchar(' ');
-			_putchar('/');
 		}
 		_putchar('\n');
 	}

@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strcpy - function that copies the string pointed to by src, including the terminating null byte
- * @a: String
+ * _strcpy - copies the string pointed to by src,including the terminating \0
+ * @dest: pointer
+ * @src: string
  * Return: cvsdvsdv
  */
 char *_strcpy(char *dest, char *src)
@@ -14,6 +15,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	dest[i + 1] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

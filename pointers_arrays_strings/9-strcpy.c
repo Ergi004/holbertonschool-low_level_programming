@@ -3,7 +3,7 @@
 
 /**
  * _strcpy - copies the string pointed to by src,including the terminating \0
- * @dest: pointer
+ * @dest: string
  * @src: string
  * Return: cvsdvsdv
  */

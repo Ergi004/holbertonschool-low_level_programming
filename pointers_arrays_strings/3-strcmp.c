@@ -2,23 +2,17 @@
 #include <stdio.h>
 
 /**
- * *_strncpy - this is a function that concatenates two strings.
- * @dest: String
- * @src: String
- * @n: Integer
+ * _strcmp - this is a function that concatenates two strings.
+ * @s1: String
+ * @s2: String
  * Return: Always 0.
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int i;
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	while (*s1 && *s2 && *s1 == *s2)
 	{
-		dest[i] = src[i];
+		s1++;
+		s2++;
 	}
-	for ( ; i < n; i++)
-	{
-		dest[i] = '\0';
-	}
-	return (dest);
+	return (*s1 - *s2);
 }

@@ -7,34 +7,19 @@
  * @a: pointer.
  * Return: Always 0.
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
-	int index = 0;
+	int i;
 
-	while (str[index])
+	i = 0;
+	while  (str[i] != '\0')
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
+		if (str[i] - 1 >= 33 || str[i] - 1 <= 46 || str[i] - 1 >= 59 || str[i] - 1 <= 63)
 		{
-			index++;
+			i++;
 		}
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}' ||
-				index == 0)
-		{
-			str[index] -= 32;
-			index++;
-		}
+		
+		i++;
 	}
 	return (str);
 }

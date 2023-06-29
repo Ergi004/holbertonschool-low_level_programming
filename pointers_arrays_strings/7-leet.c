@@ -6,21 +6,21 @@
  * @str: String
  * Return: Always 0.
  */
-char *leet(char *str)
+char *leet(char *s)
 {
 	int i, j;
 	char letter[] = "aAeEoOtlLtT";
 	char number[] = "4433001177";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; letter[j] != '\0'; j++)
 		{
-			if (str[i] == letter[j])
+			if (s[i] == letter[j])
 			{
-				str[i] = number[j];
+				s[i] = number[j];
 			}
 		}
 	}
-	return (str);
+	return (s);
 }

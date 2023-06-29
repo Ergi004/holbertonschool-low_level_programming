@@ -2,24 +2,33 @@
 #include <stdio.h>
 
 /**
- * reverse_array - function that reverses the content of an array of integers.
- * @n: String
- * @a: pointer.
+ * cap_string - function that capitalizes all words of a string.
+ * @str: String
  * Return: Always 0.
  */
 char *cap_string(char *str)
 {
 	int i;
-
-	i = 0;
-	while  (str[i] != '\0')
+	 
+	for (i = 0;str[i] != '\0'; i++)
 	{
-		if (str[i] - 1 >= 33 || str[i] - 1 <= 46 || str[i] - 1 >= 59 || str[i] - 1 <= 63)
+		if (str[i] == ',' ||
+				str[i] == ';' ||
+				str[i] == '.' ||
+				str[i] == '!' ||
+				str[i] == '?' ||
+				str[i] == '"' ||
+				str[i] == '(' ||
+				str[i] == ')' ||
+				str[i] == '{' ||
+				str[i] == '}' )
 		{
-			i++;
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+			{
+				str[i + 1] = str[i + 1] - 32;
+			
+			}
 		}
-		
-		i++;
 	}
 	return (str);
 }

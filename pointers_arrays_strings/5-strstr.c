@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-/** _strstr -  function that locates a substring
+/**
+ * _strstr -  function that locates a substrinb
  * @haystack: pointer
  * @needle: pointer
  * Return: NULL.

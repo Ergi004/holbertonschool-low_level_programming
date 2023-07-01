@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
- * _strstr - function that locates a substring
- * @s: pointer
- * @accept: pointer
+/** _strstr -  function that locates a substring
+ * @haystack: pointer
+ * @needle: pointer
  * Return: NULL.
  */
 

@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * factorial - Entry point 
+ * factorial - Entry point
  * @n: Iteger
  * Return: 0
  */
+
 int factorial(int n)
 {
 	if (n < 1)

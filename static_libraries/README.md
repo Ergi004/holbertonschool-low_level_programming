@@ -1,2 +1,1 @@
-ska
-
+C - Static libraries

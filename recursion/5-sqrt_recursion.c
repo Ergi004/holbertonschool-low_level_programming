@@ -1,13 +1,14 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 /**
- * _sqrt_rec - Entry point
- * _sqrt_recursion - Entry point
- * @n: Integer
- * @root: integer
- * Return _sqrt_rec: Success
- * Return _sqrt_recursion: success
+ * _sqrt_rec - function.
+ * @n: number
+ * @root: root
+ * Return: n.
  */
+
 int _sqrt_rec(int n, int root)
 {
 	if (root * root == n)
@@ -23,6 +24,12 @@ int _sqrt_rec(int n, int root)
 		return (_sqrt_rec(n, root + 1));
 	}
 }
+
+/**
+ * _sqrt_recursion - function
+ * @n: number
+ * Return: number
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)

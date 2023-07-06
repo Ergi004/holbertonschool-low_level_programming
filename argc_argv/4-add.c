@@ -9,11 +9,22 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc < 3)
+	int i, j;
+	int sum = 0;
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
+		for (j = 0; j < (int)strlen(argv[i]); j++)
+		{
+		if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
+		{
+			printf("Error\n");
+			return (1);
+		}
+		}
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+
+	printf("%d\n", sum);
 	return (0);
 }

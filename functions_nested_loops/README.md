@@ -1,37 +1,19 @@
-            ~            ~A function prototype is simply the declaration of a function that specifies function's name, parameters and return type. It doesn't contain function body.
+Readme: Nested Loops, Functions, Variable Scope, Header Files, and GCC Flags
+This readme provides a concise overview of nested loops, functions, variable scope, header files, and GCC flags in programming.
 
-A function prototype gives information to the compiler that the function may later be used in the program.
+Nested Loops
+Nested loops are used to perform repetitive tasks within another loop, enabling iteration over multi-dimensional data structures or complex pattern-based computations.
 
-Syntax of function prototype
-returnType functionName(type1 argument1, type2 argument2, ...);
-In the above example, int addNumbers(int a, int b); is the function prototype which provides the following information to the compiler:
+Functions
+Functions are self-contained blocks of code that perform specific tasks, promoting code modularity and reusability. They require declaration and definition, allowing code to be divided into smaller units for better organization.
 
-name of the function is addNumbers()
-return type of the function is int
-two arguments of type int are passed to the function
-The function prototype is not needed if the user-defined function is defined before the main() function.
+Variable Scope
+Variables can have local or global scope. Local variables are declared within a specific block or function, offering encapsulation and preventing naming conflicts. Global variables, declared outside any function, are accessible throughout the entire program.
 
-Calling a function
-Control of the program is transferred to the user-defined function by calling it.
+Header Files and #include
+Header files contain function prototypes, definitions, and declarations shared across multiple source files. They are included in programs using the #include directive, promoting modularity, code reuse, and organized code development.
 
-Syntax of function call
-functionName(argument1, argument2, ...);
-In the above example, the function call is made using addNumbers(n1, n2); statement inside the main() function.
+GCC Flags: -Wall -Werror -pedantic -Wextra -std=gnu89
+GCC flags are used with the GNU Compiler Collection. The -Wall flag enables all warning messages, -Werror treats warnings as errors, -pedantic enforces strict adherence to standard programming practices, -Wextra enables extra warning messages, and -std=gnu89 specifies the C language standard to use.
 
-Function definition
-Function definition contains the block of code to perform a specific task. In our example, adding two numbers and returning it.
-
-Syntax of function definition
-returnType functionName(type1 argument1, type2 argument2, ...)
-{
-    //body of the function
-}
-When a function is called, the control of the program is transferred to the function definition. And, the compiler starts executing the codes inside the body of a function.
-
-Passing arguments to a function
-
-In programming, argument refers to the variable passed to the function. In the above example, two variables n1 and n2 are passed during the function call.
-
-The parameters a and b accepts the passed arguments in the function definition. These arguments are called formal parameters of the function.
-
-Passing arguments to a function
+By understanding and utilizing these concepts, developers can write efficient, modular, and well-organized code while leveraging the power of the GCC compiler for enhanced development and error detection.

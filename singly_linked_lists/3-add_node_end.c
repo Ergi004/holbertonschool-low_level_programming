@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - Adds a new node
+ * add_node_end - Adds a new node
  * @new_node - list_t
  * @head: Koka
  * @str: string

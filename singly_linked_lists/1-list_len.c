@@ -4,17 +4,16 @@
 #include "lists.h"
 
 /**
- * print_list - singly linked list
+ * print_len - singly linked list
  * @count - size_t
  * @h: string
  * Return: count
  */
 size_t list_len(const list_t *h)
 {
-	size_t count = 0;
+	size_t count = 1;
 
 		count++;
 		h = h->next;
-	}
 	return (count);
 }

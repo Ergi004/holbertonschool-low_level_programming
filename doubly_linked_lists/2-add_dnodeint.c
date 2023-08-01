@@ -8,7 +8,7 @@
  * add_dnodeint - Adds the node in the beginning
  * @head: First node
  * @n: Constant integer
- * @
+ * Return: New
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {

@@ -7,7 +7,7 @@
  * print_dlistint - singly linked list
  * @h: string
  * @i: integer
- * Return: i
+ * Return: count
  */
 size_t print_dlistint(const dlistint_t *h)
 {

@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * list_len - singly linked list
+ * dlistint_len - singly linked list
  * @count - size_t
  * @h: string
  * Return: count

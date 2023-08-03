@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - Function that converts binary to units
+ * binary_to_uint - Function that converts binary to units
  * @n: input
  * Return: n
  */

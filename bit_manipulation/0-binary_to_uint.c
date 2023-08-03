@@ -5,7 +5,7 @@
 
 /**
  * binary_to_uint - Function that converts binary to units
- * @n: input
+ * @b: input
  * Return: n
  */
 unsigned int binary_to_uint(const char *b)

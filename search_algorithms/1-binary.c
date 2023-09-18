@@ -6,7 +6,7 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i;
+	i;
 	int first = 0, last = size - 1, mid;
 
 	if (!value || array == NULL)
@@ -21,11 +21,11 @@ int binary_search(int *array, size_t size, int value)
 		{
 			if (array[mid] == value)
 				return (mid);
-			else if (arrray[mid] > value)
+			else if (array[mid] > value)
 			{
 				last = mid - 1;
 			}
-			else (array[mid] < value)
+			else
 			{
 				first = mid + 1;
 			}

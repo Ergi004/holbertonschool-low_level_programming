@@ -25,15 +25,15 @@ int binary_search(int *array, size_t size, int value)
 			if (i == first)
 				printf("%d", array[i]);
 			else
-			printf(", %d", array[i]);
+				printf(", %d", array[i]);
 
 		}
 		printf("\n");
 		if (array[mid] == value)
 			return (mid);
-		else if (array[mid] > value)
+		else if (array[mid] < value)
 			first = mid + 1;
-		else
+		else if (array[mid] > value)
 			last = mid - 1;
 	}
 	return (-1);
